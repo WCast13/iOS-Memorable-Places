@@ -13,6 +13,7 @@
 		3D1208281E39CD2E0040A931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1208271E39CD2E0040A931 /* Assets.xcassets */; };
 		3D12082B1E39CD2E0040A931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1208291E39CD2E0040A931 /* LaunchScreen.storyboard */; };
 		3D1208331E39CE5A0040A931 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1208321E39CE5A0040A931 /* PlacesViewController.swift */; };
+		3D1208361E3EF32D0040A931 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1208351E3EF32D0040A931 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3D12082A1E39CD2E0040A931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D12082C1E39CD2E0040A931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D1208321E39CE5A0040A931 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		3D1208351E3EF32D0040A931 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1208361E3EF32D0040A931 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				3D12081F1E39CD2E0040A931 /* memorablePlaces */,
 				3D12081E1E39CD2E0040A931 /* Products */,
+				3D1208341E3EF32D0040A931 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				3D12082C1E39CD2E0040A931 /* Info.plist */,
 			);
 			path = memorablePlaces;
+			sourceTree = "<group>";
+		};
+		3D1208341E3EF32D0040A931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D1208351E3EF32D0040A931 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
