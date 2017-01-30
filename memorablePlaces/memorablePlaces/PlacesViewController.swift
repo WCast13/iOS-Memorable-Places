@@ -16,17 +16,17 @@ class PlacesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-      if places.count == 1 && places[0].count == 0 {
-        places.remove(at: 0)
-        places.append(["name":"Taj Mahal", "lat":"27.175277", "lon":"78.042128"])
-      }
-      
-      activePlace = -1
-      table.reloadData()
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    if places.count == 1 && places[0].count == 0 {
+      places.remove(at: 0)
+      places.append(["name":"Taj Mahal", "lat":"27.175007", "lon":"78.042113"])
     }
-  
-  
+    
+    activePlace = -1
+    table.reloadData()
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
